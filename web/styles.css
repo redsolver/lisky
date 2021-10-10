@@ -166,6 +166,15 @@ body {
   grid-area: header;
 }
 
+#headerLogo {
+  height: 40px;
+  margin-top: 4px;
+}
+
+.darkmode--activated #headerLogo {
+  filter: invert();
+}
+
 .channels {
   grid-area: channels;
 }
