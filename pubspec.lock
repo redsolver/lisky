@@ -155,6 +155,15 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.0.1"
+  cross_file_dart:
+    dependency: transitive
+    description:
+      path: "."
+      ref: HEAD
+      resolved-ref: "4d7cb61ba23da61e11246b1d7d6a8451df42a8ff"
+      url: "https://github.com/redsolver/cross_file_dart.git"
+    source: git
+    version: "0.3.1+3"
   crypto:
     dependency: transitive
     description:
@@ -162,6 +171,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.0.1"
+  cryptography:
+    dependency: transitive
+    description:
+      name: cryptography
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.2"
   dart_style:
     dependency: transitive
     description:
@@ -197,6 +213,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.0"
+  http:
+    dependency: "direct main"
+    description:
+      name: http
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.13.3"
   http_multi_server:
     dependency: transitive
     description:
@@ -274,6 +297,15 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.2"
+  password_hash:
+    dependency: transitive
+    description:
+      path: "."
+      ref: HEAD
+      resolved-ref: "20e0b99f41325af285096608dd76a8fe97630f8e"
+      url: "https://github.com/Derrick56007/dart-password-hash.git"
+    source: git
+    version: "2.0.0"
   path:
     dependency: transitive
     description:
@@ -288,6 +320,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.11.1"
+  pinenacl:
+    dependency: transitive
+    description:
+      name: pinenacl
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.3.3"
   pool:
     dependency: transitive
     description:
@@ -316,6 +355,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.0"
+  quiver:
+    dependency: transitive
+    description:
+      name: quiver
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.0.1"
   scratch_space:
     dependency: transitive
     description:
@@ -337,6 +383,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.1"
+  simple_observable:
+    dependency: "direct main"
+    description:
+      name: simple_observable
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.0"
+  skynet:
+    dependency: "direct main"
+    description:
+      path: "../skynet"
+      relative: true
+    source: path
+    version: "4.2.0"
   source_maps:
     dependency: transitive
     description:
@@ -393,6 +453,22 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.0"
+  tuple:
+    dependency: transitive
+    description:
+      name: tuple
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.0"
+  tus_client:
+    dependency: transitive
+    description:
+      path: "."
+      ref: HEAD
+      resolved-ref: f94757a8c0aada1cccab8e8b7b8b48c44fbd17a0
+      url: "https://github.com/redsolver/tus_client.git"
+    source: git
+    version: "1.0.0"
   typed_data:
     dependency: transitive
     description:
@@ -400,6 +476,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.3.0"
+  uuid:
+    dependency: "direct main"
+    description:
+      name: uuid
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.0.5"
   watcher:
     dependency: transitive
     description:
@@ -423,3 +506,4 @@ packages:
     version: "3.1.0"
 sdks:
   dart: ">=2.14.2 <3.0.0"
+  flutter: ">=1.22.0"
