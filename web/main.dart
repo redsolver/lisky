@@ -242,13 +242,14 @@ void renderSidebar() async {
       }
     }
   }
-
   final userId =
       'aa03562abc4e67bb8fa0114f1bfcc6de86a6af3047430016d5ed92a830a1622d';
-  final profile = await profileDAC.getProfile(userId);
-  html += '<span class="sidebarTitle">Recommended</span>';
-  html +=
-      '<div id="click-${userId}" class="profile-item"><img src="${skynetClient.resolveSkylink(profile!.getAvatarUrl())}"> <div class="flex-column"><span class="username">${profile.username}</span><span class="category">Music</span></div></div>';
+  if (!followingStatusCache.containsKey(userId)) {
+    final profile = await profileDAC.getProfile(userId);
+    html += '<span class="sidebarTitle">Recommended</span>';
+    html +=
+        '<div id="click-${userId}" class="profile-item"><img src="${skynetClient.resolveSkylink(profile!.getAvatarUrl())}"> <div class="flex-column"><span class="username">${profile.username}</span><span class="category">Music</span></div></div>';
+  }
   sidebar.setInnerHtml(
     html,
     treeSanitizer: NodeTreeSanitizer(
